@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 70px;
+    background-color: #0a0b27;
+    position: fixed;
+}
+.navbar-nav{
+    font-size: 1.2rem;
+}
+.collapse{
+    display: flex;
+    justify-content: end;
+}
+.collapse ul li a{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.collapse ul li a:hover{
+    color: rgba(247, 32, 32, 0.893);
+}
+.logo{
+    height: 26.4375px;
+    width: 119px;
+    margin-left: 15px;
+}
+.container-fluid{
+    width: 100%;
+}
+.section{
+    width: calc(100%/2);
+    height: 100%;
+}
+.section p{
+    margin: 100px;
+}
+p img{
+    cursor: pointer;
+}
+.section-footer a{
+    text-decoration: none;
+    color: #0a0b27;
+    font-weight: bolder;
+}
+.section-footer p{
+    font-size: 14px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-footer{
+    width: calc(100%/3);
+    height: auto;
+}
+.fruit{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    position: absolute;
+}
+.leaf{
+    width: 500px;
+}
+/*----------Media quiery------------*/
+@media (max-width:500px){
+    .logo{
+        margin-left: 0;
+        transition: 1s;
+    }
+    .section p{
+        margin: 150px 40px;
+    }
+    .fruit{
+        font-size: 30px;
+        transition: 1s;
+    }
+    .leaf{
+        width: 300px;
+        transition: 1s;
+    }
+}
+@media (max-width:930px){
+    .section{
+        width: 100%;
+    }
+    .section-footer{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
